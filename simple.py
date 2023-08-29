@@ -2,10 +2,10 @@ def f(x,y):
     return x+y
 def rk4(x0,y0,xn,n):
     h=(xn-x0)/n
-    print('...solution...')
-    print('x0\t y0\t yn')
+    print('----solution----')
+    print('x0\t  y0\t  yn')
     for i in range(n):
-        k1=h*(f(0,y0))
+        k1=h*(f(x0,y0))
         k2=h*f((x0+h/2),(y0+k1/2))
         k3=h*(f((x0+h/2),(y0+k2/2)))
         k4=h*f((x0+h),(y0+k3))
